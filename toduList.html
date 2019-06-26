@@ -5,8 +5,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<title>TodoList</title>
-		<link rel="stylesheet" href="/css/bootstrap.css" />
-		<link rel="stylesheet" href="/css/all.css" />
+		<link rel="stylesheet" href="./css/bootstrap.css" />
+		<link rel="stylesheet" href="./css/all.css" />
 	</head>
 	<style>
 		body {
@@ -48,7 +48,7 @@
 									添加
 								</button>
 								<select v-model="theme" class="custom-select mt-2 col">
-									<option selected="">选择主题</option>
+									<option disabled value="">选择主题</option>
 									<option value="bg-primary text-white">一般</option>
 									<option value="bg-secondary text-white">次要</option>
 									<option value="bg-danger text-white">紧急</option>
@@ -123,10 +123,10 @@
 				</div>
 			</div>
 		</div>
-		<script src="/js/jquery.min.js"></script>
-		<script src="/js/popper.min.js"></script>
-		<script src="/js/bootstrap.min.js"></script>
-		<script src="/js/vue.js"></script>
+		<script src="./js/jquery.min.js"></script>
+		<script src="./js/popper.min.js"></script>
+		<script src="./js/bootstrap.min.js"></script>
+		<script src="./js/vue.js"></script>
 		<script>
 			new Vue({
 				el: '#app',
