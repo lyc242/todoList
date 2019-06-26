@@ -22,7 +22,7 @@
 			<h1 class="display-2 my-3 mx-auto">Things to do</h1>
 			<div class="row">
 				<div class="container row col-9 mb-auto">
-					<div class="card border-primary mb-3 m-1" style="width: 20rem;">
+					<div class="card border-primary  mb-3 m-1" style="width: 20rem;">
 						<div class="card-header">
 							<input
 								type="text"
@@ -32,22 +32,17 @@
 							/>
 							请入输入题目
 						</div>
-						<div class="card-body">
+						<div class="card-body container-fluid ">
 							<textarea
-								class="form-control"
+								class="form-control "
 								id="exampleTextarea"
 								rows="3"
 								spellcheck="false"
 								v-model="inputDetail"
+								style="min-height: 100px"
 							></textarea>
-							<div class="row">
-								<button
-									@click="handleAdd"
-									class="btn btn-outline-secondary mt-2 col"
-								>
-									添加
-								</button>
-								<select v-model="theme" class="custom-select mt-2 col">
+							<div class="container m-0 p-0">
+								<select v-model="theme" class="custom-select mt-2 ">
 									<option disabled value="">选择主题</option>
 									<option value="bg-primary text-white">一般</option>
 									<option value="bg-secondary text-white">次要</option>
@@ -57,6 +52,12 @@
 									<option value="bg-light">无主题</option>
 									<option value="bg-dark text-white">强调</option>
 								</select>
+								<button
+									@click="handleAdd"
+									class="btn btn-outline-secondary col mt-2"
+								>
+									添加
+								</button>
 							</div>
 						</div>
 					</div>
